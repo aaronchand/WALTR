@@ -3,8 +3,7 @@
 
 uint8_t newMACAddress[] = {0x44, 0x44, 0x44, 0x44, 0x44, 0x44}; //MAC Address
 
-void setup() 
-{
+void setup() {
   Serial.begin(115200);
   WiFi.mode(WIFI_STA); //Set Device as a WiFi Station
   
