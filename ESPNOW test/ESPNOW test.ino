@@ -27,10 +27,6 @@ void setup() {
   WiFi.mode(WIFI_STA); //Set Device as a WiFi Station
   WiFi.disconnect();
 
-  newMACAddress[5] = 1;  // set this to device number
-
-  wifi_set_macaddr(STATION_IF, &newMACAddress[0]);
-
   esp_now_init(); //init esp now
 
   esp_now_set_self_role(ESP_NOW_ROLE_COMBO);
